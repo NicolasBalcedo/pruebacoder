@@ -337,12 +337,33 @@ p{
     text-align: center;
     margin: auto;
     padding: 2px;
+    overflow: auto;
 }
 .card__cuerpo img{
     width: 20rem;
     border-radius: 15px;
 }
 /*Fin de estilos en seccion de Liquidos*/
+/*corresponde a la seccion Alquimia*/
+.contenedor__alquimia{
+    height: 100vh;
+}
+.contenedor__alquimia h2{
+    text-align: center;
+    font-size: 2rem;
+}
+.contenedor__alquimia iframe{
+    width:55rem; 
+    height:32rem;
+    margin: auto;
+}
+.contenedor__alquimia p{
+    text-align: center;
+    margin: auto;
+    padding: 3rem 30rem 3rem;
+    overflow: auto;
+}
+/*fin a la seccion Alquimia*/
 /*corresponde a la seccion contactenos*/
 form{
     font-size: 20px;
@@ -353,6 +374,9 @@ form{
     padding-top: 3%;
     padding-bottom: 1%;
     text-decoration: underline;
+}
+fieldset{
+    height: 100vh;
 }
 /*responsive main*/
 @media(max-width:768px){
@@ -465,7 +489,8 @@ form{
         "footer";
     }
     .card h2{
-        margin-top: 2rem;
+        margin-top: 1rem;
+        font-size: 1.5rem;
     }
     .card__cuerpo{
         flex-direction: column;
@@ -473,8 +498,11 @@ form{
         
     }
     .card__cuerpo img{
-        width: 20rem;
+        width: 15rem;
         align-self: center;
+    }
+    .card__cuerpo p{
+        overflow: auto;
     }
     
 }
