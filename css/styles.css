@@ -62,37 +62,10 @@ p{
 .encabezado{
     grid-area: encabezado;
 }
-/*
-.contenedor__menu{
-    background: linear-gradient(to bottom,black, #EDF7FA, #5F6CAF);
-    display: flex;
-    justify-content: center;
-}
-
-.contenedor__menu ul{
-    display: flex;
-    flex-direction: row;
-    margin: 3px 25px;
-}
-.contenedor__menu ul li{
-    display: flex;
-    margin: 0 15px;
-}
-.contenedor__menu ul li a{
-    font-style:solid 5px;
-    padding: 6px;
-}
-.contenedor__menu ul li a:hover{
-    border-radius: 5px;
-    background: linear-gradient(to bottom,#5F6CAF, #EDF7FA,black);
-    padding: 3px;
-    text-shadow: 2px 2px 2px #FFB677;
-    transition:linear .1s;
-}
-*/
 /*fin de disenio del menu*/
 /*comienzo de disenio de body*/
 /*comienzo de disenio de articulos*/
+/*
 .articulo{
     display:flex;
     flex-direction: column;
@@ -149,6 +122,11 @@ p{
     text-align: center;
     padding: 20px;
     flex-wrap: wrap;
+}
+*/
+.contenedor__articulos{
+    display: flex;
+    flex-direction: row;
 }
 /*comienzo de los videos relacionados*/
 .contenedor__videos{
@@ -369,7 +347,7 @@ main h1{
 /*Fin de  la seccion Accesorios*/
 /*corresponde a la seccion Alquimia*/
 .main__alquimia{
-    height: 100vh;
+    height: 100%;
     margin: auto;
 }
 .contenedor__alquimia h2{
@@ -400,9 +378,10 @@ form{
     text-decoration: underline;
 }
 fieldset{
-    height: 100vh;
+    height: 100%;
 }
 /*responsive main*/
+/*
 @media(max-width:768px){
     .grid{
         grid-template-columns: 1fr;
@@ -479,6 +458,7 @@ fieldset{
         text-align: center;
     }
 }
+*/
 /*Fin responsive main*/
 /*responsive seccion atos*/
 @media (max-width:768px){
