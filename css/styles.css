@@ -1,10 +1,5 @@
 /*comienzo de intrucciones generales*/
 /*formatea la pagina web para sacar los margenes */
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 /*convierte el tamaño de la fuente por defecto de 16px a 10px para que sea facil el calculo en rem*/
 html{
     font-size: 62.5%;  
@@ -38,8 +33,13 @@ footer{
     transform: rotateY(180deg);
     transition: linear .80s;
 }
-ul{
-    list-style-type: none;
+.menu{
+    background-color: aqua;
+    
+}
+.contenedor_menu{
+    background-color: #FFB677;
+    
 }
 a{
     text-decoration: none;
@@ -59,74 +59,24 @@ p{
     font-family: IndieFlower;
 }
 /*corresponde a disenio del menu*/
-.encabezado{
-    grid-area: encabezado;
-}
-/*fin de disenio del menu*/
-/*comienzo de disenio de body*/
-/*comienzo de disenio de articulos*/
-/*
-.articulo{
-    display:flex;
-    flex-direction: column;
-    border: solid 2px black;
-    border-radius: 10%;
-    width: 35%;
-    align-items: center;
-    overflow: auto;
-    padding: 40px;
-    -webkit-box-shadow: -8px 14px 37px 0px rgba(0,0,0,0.52);
-    -moz-box-shadow: -8px 14px 37px 0px rgba(0,0,0,0.52);
-    box-shadow: -8px 14px 37px 0px rgba(0,0,0,0.52);
-}
-.main__index h1{
-    text-align: center;
-    margin: 15px;
-    text-decoration: underline;
-    flex-wrap: wrap;
-}
-.main__index{
-    position: relative;
-    grid-area: main;
-}
 .contenedor__articulos{
     display: flex;
     flex-direction: row;
-    justify-content:space-evenly;
 }
-.articulo h2{
+.card-img-top{
+    width: 40%;
+    align-self: center;
+}
+.card_text{
+    
     text-align: center;
-    text-decoration: underline;
-    font-size: large;
-}
-.articulo img{
-    height: 400px;
-    border-radius: 10px;
-    margin: 15px;
-    text-align: center;
-}
-.articulo{
-    width: 35%;
-    background-color: rgb(255, 182, 119);
-    border-radius: 20px;
-    flex-wrap: nowrap;
+    align-self: center;
+    padding: 3rem;
+    overflow: auto;
     
 }
-.articulo p{
-    width: 400px;
-    height: 400px;
-    overflow-y: auto;
-    margin: 10px;
-    border: double 5px black;
-    background-color: rgb(237, 247, 250);
-    text-align: center;
-    padding: 20px;
-    flex-wrap: wrap;
-}
-*/
-.contenedor__articulos{
-    display: flex;
-    flex-direction: row;
+.card{
+    height: 100vh;
 }
 /*comienzo de los videos relacionados*/
 .contenedor__videos{
@@ -164,6 +114,7 @@ p{
 .contenedor__redes2{
     display: flex;
     flex-direction: row;
+    justify-content: end;
 }
 /*fin de los videos relacionados*/
 /*fin de disenio de body*/
@@ -180,6 +131,7 @@ p{
 .links{
     display: flex;
     flex-direction: row;
+    justify-content:right;
 }
 .contenedor__pie img{
     width: 50px;
@@ -381,87 +333,10 @@ fieldset{
     height: 100%;
 }
 /*responsive main*/
-/*
-@media(max-width:768px){
-    .grid{
-        grid-template-columns: 1fr;
-        grid-template-areas: 
-        "encabezado"
-        "main"
-        "videos"
-        "footer";
-    }
-    .contenedor__articulos{
-        flex-direction: column;
-        align-items: center;
-    }
-    .articulos{
-        width: 80%;
-        margin-bottom: 3rem;
-    }
-    
-}
-@media(max-width:657px){
-    a{
-        font-size: 10px;
-    }
-    h1{
-        font-size: 15px;
-    }
-    p{
-        font-size: 15px;
-        text-align: center;
-        overflow-wrap: break-word;
-        overflow-x: scroll;
-    }
-    .contenedor__menu ul{
-        margin: 0px 20px;
-    }
-    .contenedor__menu ul li{
-        margin: 0 2px;
-    }
-    .contenedor__menu{
-        justify-content: center;
-    }
-    .articulo img{
-        width: 20rem;
-    }
-    .articulo{
-        width: 90vw;
-        height: 100vh;
-        margin-bottom: 3rem;
-        align-items: center;
-        justify-content: center;
-    }
-    .articulo p{
-        width: 100vw;
-    }
-    .videos{
-        flex-direction: column;
-        align-items: center;
-        
-    }
-    .videos iframe{
-        margin-top: 5px;
-    }
-    .contenedor__pie{
-        width: 100vw;
-        justify-content: space-around;
-    }
-    .links{
-        flex-direction: column;
-    }
-    .links ul{
-        display: none;
-    }
-    .contenedor__redes2 a{
-        text-align: center;
-    }
-}
-*/
 /*Fin responsive main*/
 /*responsive seccion atos*/
 @media (max-width:768px){
+    /*
     .grid__atos{
         grid-template-columns: 1fr;
         grid-template-areas: 
@@ -469,6 +344,7 @@ fieldset{
         "main-atos"
         "footer";
     }
+    */
     .imagenes__atos{
         display: none;
     }
@@ -479,6 +355,20 @@ fieldset{
     }
     .contenedor__atos_main{
         align-items: center;
+    }
+    .videos{
+        flex-direction: column;
+        align-self: center;  
+    }
+    .videos iframe{
+        margin: 2rem auto;
+        
+    }
+    .links ul{
+        display: none;
+    }
+    .contenedor__pie{
+        justify-content: space-between;
     }
 }
 /*Fin responsive seccion atos*/

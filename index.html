@@ -14,17 +14,17 @@
     <body class="container-fluid">
         <div class="row">
             <!--Encabezado-->
-            <header class="col-xl-12">
+            <header class="col-lg-12">
                 <!--logo de la pagina que redirecciona a la pagina de inicio-->
                 <a href="index.html"><img class="imagenLogo" src="imagenes/logo.jpg" alt="Logo de Pagina" title="Logo de pagina"></a>
                 <!--Menu de navegacion con las diferentes secciones de la pagina-->
-                <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                    <div class="container-fluid" >
+                <nav class="row navbar navbar-expand-lg navbar-light bg-light"> 
+                    <div class="container-fluid contenedor_menu" >
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                         </button>
-                        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                            <div class="navbar-nav ">
+                        <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
+                            <div class="navbar-nav menu">
                                 <a class="nav-link" href="pages/atos.html">Atos</a>
                                 <a class="nav-link" href="pages/liquidos.html">Liquidos</a>
                                 <a class="nav-link" href="pages/accesorios.html">Accesorios</a>
@@ -36,13 +36,13 @@
                 </nav>
             </header>
             <!--Empieza el cuerpo de la pagina -->
-            <main class="main__index">
+            <main class=" row main__index">
                 <h1>Diferentes tipos de Mods</h1>
                 <div class="contenedor__articulos">
-                    <div class="card articulos">
-                        <h2>Mods Variables</h2>
+                    <div class="card">
+                        <h2 class="card_titulo">Mods Variables</h2>
                         <img src="imagenes/mods variable.jpg"  class="card-img-top" alt="Mod variable" title="Mod variable">
-                        <p>
+                        <p class="card_text">
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore, dolorem itaque placeat voluptatem 
                         assumenda cupiditate nobis eaque culpa ipsam sequi cumque excepturi ex nesciunt illum eius suscipit 
                         provident ullam officia!Facilis repudiandae, nesciunt quis eaque perferendis dolorem totam delectus 
@@ -50,10 +50,10 @@
                         iste adipisci, nobis cupiditate? Laborum ipsam fuga laboriosam.
                         </p>   
                     </div>
-                    <div class="card articulo">
-                        <h2>Mods Mecanicos</h2>
+                    <div class="card">
+                        <h2 class="card_titulo">Mods Mecanicos</h2>
                         <img src="imagenes/mods 2.jpg" class="card-img-top" alt="Mod mecanico" title="Mod mecanico">
-                        <p>
+                        <p class="card_text">
                             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil eius numquam commodi doloremque fugiat ullam harum 
                             accusamus, vero totam, corporis pariatur exercitationem at qui praesentium! Error obcaecati harum voluptas perferendis.
                             Nam aliquid praesentium dolore distinctio in doloremque veniam ab laborum dolores repellat dolor architecto, molestiae 
@@ -80,11 +80,11 @@
                 </div>
             </div>
             <!--Empieza el pie de pagina--> 
-            <footer class="footer" >
-                <div class="contenedor__pie">
+            <footer class="container-fluid footer" >
+                <div class="row contenedor__pie">
                     <!--logo de creador-->
-                    <img src="imagenes/logoCreador1.jpg" alt="Logo de Desarrollador" title="Logo del desarrollador">
-                    <div class=links>
+                    <img class="col-lg-2" src="imagenes/logoCreador1.jpg" alt="Logo de Desarrollador" title="Logo del desarrollador">
+                    <div class="col-lg-6 links">
                         <!--links a paginas relacionados-->
                         <ul>
                             <li><a  href="https://www.muchovapor.com/">Mucho Vapor</a></li>
@@ -92,7 +92,7 @@
                             <li><a  href="https://www.tiendavapor.com/">Tienda vapor</a></li> 
                         </ul>
                     </div>
-                    <div class="contenedor__redes2">
+                    <div class="col-lg-4 contenedor__redes2">
                         <a  href="http://Facebook.com"><img  src="imagenes/logoF.png" alt="Facebook" title="Facebook"></a>
                         <a  href="http://Instagram.com"><img src="imagenes/logoI.png" alt="Instagram" title="Instagram"></a>
                         <a  href="http://Whatsapp.com"><img  src="imagenes/logoW.png" alt="What Sapp" title="What Sapp"></a>
