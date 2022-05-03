@@ -29,7 +29,89 @@ header{
 footer{
     width: 100vw;
 }
-
+/*transicion descargada de pag para el logo del nav */
+.navbar-nav {
+    float: left;
+    margin: 0;
+    left: 50%;
+    transform: translatex(-50%);
+    position: relative;
+}
+.zoomOut {
+    -webkit-animation-name: zoomOut;
+    animation-name: zoomOut;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    }
+    @-webkit-keyframes zoomOut {
+    0% {
+    opacity: 1;
+    }
+    
+    50% {
+    opacity: 0;
+    -webkit-transform: scale3d(.3, .3, .3);
+    transform: scale3d(.3, .3, .3);
+    }
+    100% {
+    opacity: 0;
+    }
+    }
+    @keyframes zoomOut {
+    0% {
+    opacity: 1;
+    }
+    50% {
+    opacity: 0;
+    -webkit-transform: scale3d(.3, .3, .3);
+    transform: scale3d(.3, .3, .3);
+    }
+    100% {
+    opacity: 0;
+    }
+}
+.zoomInDown {
+    -webkit-animation-name: zoomInDown;
+    animation-name: zoomInDown;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    }
+    @-webkit-keyframes zoomInDown {
+    0% {
+    opacity: 0;
+    -webkit-transform: scale3d(.1, .1, .1) translate3d(0, -1000px, 0);
+    transform: scale3d(.1, .1, .1) translate3d(0, -1000px, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+    animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+    }
+    60% {
+    opacity: 1;
+    -webkit-transform: scale3d(.475, .475, .475) translate3d(0, 60px, 0);
+    transform: scale3d(.475, .475, .475) translate3d(0, 60px, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+    }
+    }
+    @keyframes zoomInDown {
+    0% {
+    opacity: 0;
+    -webkit-transform: scale3d(.1, .1, .1) translate3d(0, -1000px, 0);
+    transform: scale3d(.1, .1, .1) translate3d(0, -1000px, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+    animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+    }
+    60% {
+    opacity: 1;
+    -webkit-transform: scale3d(.475, .475, .475) translate3d(0, 60px, 0);
+    transform: scale3d(.475, .475, .475) translate3d(0, 60px, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+    }
+}
 .rubberBand {
     -webkit-animation-name: rubberBand;
     animation-name: rubberBand;
@@ -99,40 +181,32 @@ footer{
     }
 }
 
+/*Fin de transicion descargada de pag para el logo del nav */
+/*Class para darle estilo al logo del nav*/
 .imagenLogo{
     border-radius: 50%;
     border: solid 3px #5F6CAF;
 }
-/*
-.imagenLogo:hover{
-    transform: rotateY(180deg);
-    transition: linear .80s;
-}*/
+/*estilos para las etiquetas a h1 y p en general para el resto de la pagina*/
 a{
     text-decoration: none;
     color: black;
-    font-size: px;
+    font-size: 1.5rem;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;    
 }
 h1{
-    font-size: 25px;
+    font-size: 3rem;
     font-family: Bangers;
     font-weight: bold;
 }
 p{
-    font-size: 20px;
+    font-size: 2rem;
     font-weight: bold;
     font-family: IndieFlower;
 }
-/*corresponde a disenio del menu*/
-/*
-.contenedor__articulos{
-    display: flex;
-    flex-direction: row;
-    margin: auto;
-
-}*/
+/*Fin estilos para las etiquetas a h1 y p en general para el resto de la pagina*/
+/*estilos de las card del index*/
 .card-img-top{
     width: 15vw;
     align-self: center;
@@ -148,9 +222,8 @@ p{
 }
 .card{
     height: 40vw;
-    
 }
-/*comienzo de los videos relacionados*/
+/*comienzo de estilos de los videos relacionados en el Index*/
 .contenedor__videos{
     width: 100%;
     margin: 2rem 0;
@@ -160,7 +233,7 @@ p{
 }
 .contenedor__videos h2{
     text-align: center;
-    margin: 10px 0;
+    margin: 3rem;
     font-size: medium;
 }
 .videos{
@@ -217,16 +290,6 @@ p{
 }
 /*fin de footer*/
 /*Comienzo de los grid*/
-.grid{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4,auto);
-    grid-template-areas: 
-    "encabezado encabezado encabezado"
-    "main main main"
-    "videos videos videos"
-    "footer footer footer";
-}
 .footer{
     grid-area: footer;
 }
@@ -293,6 +356,7 @@ p{
 /* Comienzo de estilos en seccion de Liquidos*/
 .main__liquidos{
     grid-area: main__liquidos;
+    
 }
 .grid__liquidos{
     display: grid;
@@ -317,12 +381,12 @@ p{
 .card{
     display: flex;
     flex-direction: column;
-    width: 90%;
+    width: 70vw;
+    height: auto;
     background-color: rgb(255, 182, 119);
     border: solid 1px black;
     border-radius: 10px;
     padding: 2rem;
-    margin: 3rem auto;
     -webkit-box-shadow: -8px 14px 37px 0px rgba(0,0,0,0.52);
     -moz-box-shadow: -8px 14px 37px 0px rgba(0,0,0,0.52);
     box-shadow: -8px 14px 37px 0px rgba(0,0,0,0.52);
@@ -343,7 +407,7 @@ p{
     overflow: auto;
 }
 .card__cuerpo img{
-    width: 20rem;
+    width: 15rem;
     border-radius: 15px;
 }
 /*Fin de estilos en seccion de Liquidos*/
@@ -369,7 +433,7 @@ main h1{
 /*Fin de  la seccion Accesorios*/
 /*corresponde a la seccion Alquimia*/
 .main__alquimia{
-    height: 100%;
+    
     margin: auto;
 }
 .contenedor__alquimia h2{
@@ -409,6 +473,9 @@ fieldset{
     .links ul{
         display: none;
     }
+    .contenedor__pie{
+        justify-self: center;
+    }
 }
 @media (max-width:768px){
     /*
@@ -444,6 +511,10 @@ fieldset{
     }
     .contenedor__pie{
         justify-content: space-between;
+    }
+    /* pertenece a la imagen del card de la seccion liquidos*/
+    .card__cuerpo img{
+        height: 25vh;
     }
 }
 /*Fin responsive seccion atos*/
