@@ -1,0 +1,21 @@
+{
+  "name": "paginacoder",
+  "version": "1.0.0",
+  "description": "<img src=\"imagenes/logo.jpg\">\r # Proyecto de desarrollo Web Coderhouse",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/estiloss.scss css/pruebacss.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NicolasBalcedo/pruebacoder/issues"
+  },
+  "homepage": "https://github.com/NicolasBalcedo/pruebacoder#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.16"
+  }
+}

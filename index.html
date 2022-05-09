@@ -20,7 +20,7 @@
                 <!--logo de la pagina que redirecciona a la pagina de inicio-->
                 <a href="index.html"><img class="imagenLogo rubberBand" src="imagenes/logo.jpg" alt="Logo de Pagina" title="Logo de pagina"></a>
                 <!--Menu de navegacion con las diferentes secciones de la pagina-->
-                <nav class="col-md-12 col-lg-12 col-xl-12 col-xxl-12 navbar navbar-expand-lg navbar-light bg-light navbar-nav sin_fondo_nav"> 
+                <nav class="col-md-12 col-lg-12 col-xl-12 col-xxl-12 navbar navbar-expand-lg navbar-light  navbar-nav sin_fondo_nav"> 
                     <div>
                         <!--Boton Toggler de menu desplegable-->
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -41,7 +41,7 @@
             <!--Empieza el cuerpo de la pagina -->
             <main class="row">
                 <h1>Diferentes tipos de Mods</h1>
-                <div class="row">
+                <div class="row contenedor__cards_index">
                     <div class="card col-md-12 col-lg-6 col-xl-6 col-xxl-6">
                         <h2 class="card_titulo">Mods Variables</h2>
                         <img src="imagenes/mods variable.jpg"  class="card-img-top mx-auto" alt="Mod variable" title="Mod variable">
@@ -73,32 +73,34 @@
             <!--Videos relacionados, la idea es mas adelante adaptar esta seccion con un carrucel-->
             <div class="row contenedor__videos">
                 <h2>Videos relacionados</h2>
-                <div class="videos">
-                    <iframe class="col-md-6 col-lg-4 col-xl-4 col-xxl-4" src="https://www.youtube.com/embed/ARPYDu9sFWE" title="YouTube video player" frameborder="0" 
+                <div class="row videos">
+                    <iframe class="row col-sm-6 col-md-6 col-lg-6 col-xl-3 col-xll-3 vid" src="https://www.youtube.com/embed/ARPYDu9sFWE" title="YouTube video player" frameborder="0" 
                     allow="accelerometer;ncrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <iframe class="col-md-6 col-lg-4 col-xl-4 col-xxl-4" src="https://www.youtube.com/embed/QebPWgsXVhM" title="YouTube video player" frameborder="0" 
+                    <iframe class="row col-sm-6 col-md-6 col-lg-6 col-xl-3 col-xll-3 vid" src="https://www.youtube.com/embed/QebPWgsXVhM" title="YouTube video player" frameborder="0" 
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <iframe class="col-md-6 col-lg-4 col-xl-4 col-xxl-4" src="https://www.youtube.com/embed/owGra1BmS5A" title="YouTube video player" frameborder="0"
+                    <iframe class="row col-sm-6 col-md-6 col-lg-6 col-xl-3 col-xll-3 vid" src="https://www.youtube.com/embed/owGra1BmS5A" title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe class="row col-sm-6 col-md-6 col-lg-6 col-xl-3 col-xll-3 vid" src="https://www.youtube.com/embed/owGra1BmS5A" title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
             <!--Empieza el pie de pagina--> 
-            <footer class="row footer" >
-                <div class="row contenedor__pie">
+            <footer class= "row footer" >
+                <div class="contenedor__pie">
                     <!--logo de creador-->
-                    <img class="col-md-6 col-lg-4 col-xl-4 col-xxl-4" src="imagenes/logoCreador1.jpg" alt="Logo de Desarrollador" title="Logo del desarrollador">
-                    <div class="col-md-6 col-lg-4 col-xl-4 col-xxl-4 links">
-                        <!--links a paginas relacionados-->
+                    <img class="imagen_creador " src="imagenes/logoCreador1.jpg" alt="Logo de Desarrollador" title="Logo del desarrollador">
+                    <!--links a paginas relacionados-->
+                    <div class="links">
                         <ul>
                             <li><a  href="https://www.muchovapor.com/">Mucho Vapor</a></li>
                             <li><a  href="https://cigarrilloselectronicos.com.ar/">cigarrillos electronicos</a></li>
                             <li><a  href="https://www.tiendavapor.com/">Tienda vapor</a></li> 
                         </ul>
                     </div>
-                    <div class="col-md-6 col-lg-4 col-xl-4 col-xxl-4 contenedor__redes2 zoomInDown">
-                        <a  href="http://Facebook.com"><img  src="imagenes/logoF.png" alt="Facebook" title="Facebook"></a>
-                        <a  href="http://Instagram.com"><img src="imagenes/logoI.png" alt="Instagram" title="Instagram"></a>
-                        <a  href="http://Whatsapp.com"><img  src="imagenes/logoW.png" alt="What Sapp" title="What Sapp"></a>
+                    <div class=" contenedor__redes2">
+                        <a  href="http://Facebook.com"><img  src="imagenes/logof.png" alt="Facebook" title="Facebook"></a>
+                        <a  href="http://Instagram.com"><img src="imagenes/logoi.png" alt="Instagram" title="Instagram"></a>
+                        <a  href="http://Whatsapp.com"><img  src="imagenes/logow.png" alt="What Sapp" title="What Sapp"></a>
                     </div> 
                 </div>   
             </footer>
