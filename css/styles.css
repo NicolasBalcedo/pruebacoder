@@ -212,7 +212,28 @@ p{
     
 }
 /*Fin del main del Index*/
-
+.barra{
+    height: 2rem;
+    margin: 2rem;
+    -webkit-box-shadow: -8px 14px 37px 0px rgba(0,0,0,0.52);
+    -moz-box-shadow: -8px 14px 37px 0px rgba(0,0,0,0.52);
+    box-shadow: -8px 14px 37px 0px rgba(0,0,0,0.52);
+}
+.contenedor_barras{
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+    text-align: center;
+    margin: 2rem auto;
+}
+.contenedor_barras h3{
+    font-size:smaller;
+}
+.titulo_barras h2{
+    text-align: center;
+    margin: 2rem;
+    text-decoration: underline;
+}
 /*comienzo de estilos de los videos relacionados en el Index*/
 .contenedor__videos{
     margin: 2rem auto;
