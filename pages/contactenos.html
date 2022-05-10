@@ -9,79 +9,115 @@
         <link rel="stylesheet" href="../css/styles.css">
     </head>
     <body>
-        <header>
-            <!--Imagen de logo el cual redirecciona a la pagina de inicio-->
-            <a href="../index.html"><img class="imagenLogo" src="../imagenes/logo.jpg" alt="Logo de Pagina" title="Logo de pagina"></a>
-            <!--Menu de navegacion con las diferentes secciones de la pagina-->
-            <nav class="navbar navbar-expand-lg navbar-light bg-light sin_fondo_nav">
-                <div class="container-fluid" >
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                        <div class="navbar-nav ">
-                            <a class="nav-link" href="../pages/atos.html">Atos</a>
-                            <a class="nav-link" href="../pages/liquidos.html">Liquidos</a>
-                            <a class="nav-link" href="../pages/accesorios.html">Accesorios</a>
-                            <a class="nav-link" href="../pages/alquimia.html">Alquimia</a>
-                            <a class="nav-link" href="../pages/contactenos.html">Contactenos</a>
+        <div class="container-fluid">
+            <header class="row">
+                <!--Imagen de logo el cual redirecciona a la pagina de inicio-->
+                <a href="../index.html"><img class="imagenLogo" src="../imagenes/logo.jpg" alt="Logo de Pagina" title="Logo de pagina"></a>
+                <!--Menu de navegacion con las diferentes secciones de la pagina-->
+                <nav class="col-md-12 col-lg-12 col-xl-12 col-xxl-12 navbar navbar-expand-lg navbar-light bg-light sin_fondo_nav">
+                    <div class="container-fluid" >
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                            <div class="navbar-nav ">
+                                <a class="nav-link" href="../pages/atos.html">Atos</a>
+                                <a class="nav-link" href="../pages/liquidos.html">Liquidos</a>
+                                <a class="nav-link" href="../pages/accesorios.html">Accesorios</a>
+                                <a class="nav-link" href="../pages/alquimia.html">Alquimia</a>
+                                <a class="nav-link" href="../pages/contactenos.html">Contactenos</a>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+            <h1 class="titulo__formulario">Completa los datos y dejanos conocer tu opinion</h1>
+            <!--Iniciamos el formulario-->
+            <form class="row g-3 needs-validation" novalidate>
+                <div class="col-12 col-sm-8 col-md-8 col-lg-6 col-xl-6 col-xxl-6">
+                    <label for="validationCustom01" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="validationCustom01" value="" required>
+                    <div class="valid-feedback">
+                        Looks good!
+                    </div>
+                </div>
+                <div class="col-12 col-sm-8 col-md-8 col-lg-6 col-xl-6 col-xxl-6">
+                    <label for="validationCustom02" class="form-label">Apellido</label>
+                    <input type="text" class="form-control" id="validationCustom02" value="" required>
+                    <div class="valid-feedback">
+                        Looks good!
+                    </div>
+                </div>
+                <div class="col-12 col-sm-8 col-md-8 col-lg-6 col-xl-6 col-xxl-6">
+                    <label for="validationCustomUsername" class="form-label">Email</label>
+                    <div class="input-group has-validation">
+                        <span class="input-group-text" id="inputGroupPrepend">@</span>
+                        <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                        <div class="invalid-feedback">
+                            Please choose a username.
                         </div>
                     </div>
                 </div>
-            </nav>
-        </header>
-        <h1 class="titulo__formulario">Completa los datos y dejanos conocer tu opinion</h1>
-        <!--Iniciamos el formulario-->
-        <form action="" title="Formulario de contacto">
-            <!--forma el recuadro -->
-            <fieldset>
-                <!--las etiquetas br solo estan usadas para el primer desafio, hasta que se incluya css-->
-                <legend>Dejanos tu comentario</legend><br>
-                <label for="nombre">Nombre y Apellido</label><br>
-                <input type="text" name="nombre"><br>
-                <label for="telefono">Telefono</label><br>
-                <input type="number" name="telefono"><br>
-                <label for="edad">Edad</label><br>
-                <input type="number" name="edad"><br>
-                <label for="email">Correo Electronico</label><br>
-                <input type="email" name="email"><br>
-                <label for="">Que tipo de Mods prefieres?</label><br>
-                <input type="checkbox" value="v" name="variable">Bataje variable <br>
-                <input type="checkbox" value="m" name="mecanico">Mecanico <br>
-                <label for="">Por que empezo a Vapear?</label><br>
-                <!--Se le pone el mismo name a los input para que pueda elegirse una sola opcion-->
-                <input type="radio" name="porque">Ex fumador <br>
-                <input type="radio" name="porque"> Por hobbie <br>
-                <label for="">Consideras que el contenido de la pagina es util?</label><br>
-                <select name="">
-                    <option value="s">Si</option><br>
-                    <option value="n">No</option><br>
-                </select><br>
-                <textarea name="mensaje" placeholder="Deje su mensaje aqui" cols="30" rows="10"></textarea><br>
-                <input type="submit" value="Enviar">
-                <input type="reset" value="Limpiar">
-            </fieldset>
-        </form>
-        <!--Empieza el pie de pagina-->
-        <footer class= "row footer" >
-            <div class="contenedor__pie">
-                <!--logo de creador-->
-                <img class="imagen_creador " src="../imagenes/logoCreador1.jpg" alt="Logo de Desarrollador" title="Logo del desarrollador">
-                <!--links a paginas relacionados-->
-                <div class="links">
-                    <ul>
-                        <li><a  href="https://www.muchovapor.com/">Mucho Vapor</a></li>
-                        <li><a  href="https://cigarrilloselectronicos.com.ar/">cigarrillos electronicos</a></li>
-                        <li><a  href="https://www.tiendavapor.com/">Tienda vapor</a></li> 
-                    </ul>
+                <div class="col-12 col-sm-8 col-md-8 col-lg-6 col-xl-6 col-xxl-6">
+                        <label for="validationCustom03" class="form-label">Ciudad</label>
+                        <input type="text" class="form-control" id="validationCustom03" required>
+                    <div class="invalid-feedback">
+                        No es una ciudad valida
+                    </div>
                 </div>
-                <div class=" contenedor__redes2">
-                    <a  href="http://Facebook.com"><img  src="../imagenes/logof.png" alt="Facebook" title="Facebook"></a>
-                    <a  href="http://Instagram.com"><img src="../imagenes/logoi.png" alt="Instagram" title="Instagram"></a>
-                    <a  href="http://Whatsapp.com"><img  src="../imagenes/logow.png" alt="What Sapp" title="What Sapp"></a>
-                </div> 
-            </div>   
-        </footer>
+                <div class="col-12 col-sm-8 col-md-8 col-lg-6 col-xl-6 col-xxl-6">
+                    <label for="validationCustom04" class="form-label">Partido</label>
+                    <select class="form-select" id="validationCustom04" required>
+                        <option selected disabled value="">Localidad</option>
+                        <option>Quilmes</option>
+                        <option>Bernal</option>
+                        <option>Berazategui</option>
+                        <option>Solano</option>
+                    </select>
+                    <div class="invalid-feedback">
+                        Please select a valid state.
+                    </div>
+                </div>
+                <div class="col-12 col-sm-8 col-md-8 col-lg-6 col-xl-6 col-xxl-6">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                        <label class="form-check-label" for="invalidCheck">
+                            Acepto recicbir informacion semanal
+                        </label>
+                        <div class="invalid-feedback">
+                            You must agree before submitting.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-8 col-md-8 col-lg-6 col-xl-6 col-xxl-6 mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label"></label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="6"></textarea>
+                </div>
+                <div class="col-12 col-sm-8 col-md-8 col-lg-6 col-xl-6 col-xxl-6">
+                    <button class="btn btn-primary" type="submit">ENVIAR</button>
+                </div>
+            </form>
+            <!--Empieza el pie de pagina-->
+            <footer class= "row footer" >
+                <div class="contenedor__pie">
+                    <!--logo de creador-->
+                    <img class="imagen_creador " src="../imagenes/logoCreador1.jpg" alt="Logo de Desarrollador" title="Logo del desarrollador">
+                    <!--links a paginas relacionados-->
+                    <div class="links">
+                        <ul>
+                            <li><a  href="https://www.muchovapor.com/">Mucho Vapor</a></li>
+                            <li><a  href="https://cigarrilloselectronicos.com.ar/">cigarrillos electronicos</a></li>
+                            <li><a  href="https://www.tiendavapor.com/">Tienda vapor</a></li> 
+                        </ul>
+                    </div>
+                    <div class=" contenedor__redes2">
+                        <a  href="http://Facebook.com"><img  src="../imagenes/logof.png" alt="Facebook" title="Facebook"></a>
+                        <a  href="http://Instagram.com"><img src="../imagenes/logoi.png" alt="Instagram" title="Instagram"></a>
+                        <a  href="http://Whatsapp.com"><img  src="../imagenes/logow.png" alt="What Sapp" title="What Sapp"></a>
+                    </div> 
+                </div>   
+            </footer>
+        </div>
         <script src="../js/bootstrap.bundle.min.js"></script>
     </body>
 </html>

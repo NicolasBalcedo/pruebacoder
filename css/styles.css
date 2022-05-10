@@ -19,7 +19,6 @@ main{
 /*los tributos en el body va a ser modificados en todas las secciones de mi pagina*/
 body{
     background: linear-gradient(to bottom,#5F6CAF, #EDF7FA, #5F6CAF);
-    width: 100vw;
 }
 header{
     background-image: url("../imagenes/fondoHeader.jpg");
@@ -289,7 +288,7 @@ p{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+    
 }
 .imagenes__atos img{
     padding: 0;
@@ -304,8 +303,6 @@ p{
 .imagenes__atos{
     display: flex;
     flex-direction: column;
-    height: auto;
-
 }
 .atos__articulos{
     display: flex;
@@ -334,11 +331,7 @@ p{
 
 /* Comienzo de estilos en seccion de Liquidos*/
 
-/*
-.main__liquidos{
-    grid-area: main__liquidos;
-    
-}
+
 
 .contenedor-cards{
     display: flex;
@@ -347,72 +340,104 @@ p{
 .contenedor-cards h1{
     text-align: center;
     font-size: 3rem;
+    margin-top: 2remw;
 }
-
-
-*/
-
+.liquidos_card{
+    display: flex;
+    flex-direction: column;
+    margin: 2rem auto;
+}
+.liquidos_card h2{
+    text-align: center;
+    font-size: medium;
+}
+.card__cuerpo{
+    display: flex;
+    flex-direction: row;
+}
+.card__cuerpo img{
+    width: 13rem;
+    border-radius: 3rem;
+    margin: 0.5rem auto;
+}
+.card__cuerpo p{
+    margin: auto 1rem;
+}
 
 /*Fin de estilos en seccion de Liquidos*/
 /*corresponde a la seccion Accesorios*/
+.accesorios_card{
+    margin: 0.3rem auto 0.7rem;
+    flex-wrap: nowrap;
 
-
-/*
-main h1{
-    text-align: center;
-    margin: 4rem;
 }
-.contenedor__complementos{
-    display: flex;
-    flex-wrap: wrap;
-    
+.accesorios_card img{
+    border: 0;
+
 }
-*/
-
-
 /*Fin de  la seccion Accesorios*/
+
+
 /*corresponde a la seccion Alquimia*/
-.main__alquimia{
-    
-    margin: auto;
-}
-.contenedor__alquimia h2{
-    text-align: center;
-    font-size: 2rem;
-}
-.contenedor__alquimia iframe{
-    width:55rem; 
-    height:32rem;
-    margin: auto;
-}
-.contenedor__alquimia p{
-    text-align: center;
-    margin: auto;
-    padding: 3rem 30rem 3rem;
+.contenedor_video_alquimia{
+    display: flex;
+    flex-direction: row;
     
 }
+.contenedor_video_alquimia h2{
+    text-align: center;
+    margin: 2rem;
+
+}
+.contenedor_video_alquimia iframe{
+    height: 40rem;
+    border-radius: 3rem;
+    margin: 2rem auto 2rem;
+    padding: 0;
+    -webkit-box-shadow: -8px 14px 37px 0px rgba(0,0,0,0.52);
+    -moz-box-shadow: -8px 14px 37px 0px rgba(0,0,0,0.52);
+    box-shadow: -8px 14px 37px 0px rgba(0,0,0,0.52);
+}
+.contenedor_video_alquimia p{
+    text-align: center;
+    margin: 2rem auto;
+    padding: 4rem;
+}
+
 /*fin a la seccion Alquimia*/
 /*corresponde a la seccion contactenos*/
 form{
-    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
     text-align: center;
+    align-items: center;
+    border: solid 0.1rem rgb(122, 121, 121);
+    margin: 2rem auto;
 }
 .titulo__formulario{
-    padding-left: 5%;
-    padding-top: 3%;
-    padding-bottom: 1%;
-    text-decoration: underline;
+    margin: 2rem;
+    font-size:3rem;
 }
-fieldset{
-    height: 100%;
-}
+
 /*responsive main*/
 /*Fin responsive main*/
-/*responsive seccion atos*/
+/*responsive*/
 @media(max-width:768px) {
+    /*pertenece al footer*/
     .links{
         display: none;
     }
+
+    /*pertenece a la seccion liquidos*/
+    .card__cuerpo{
+        flex-direction: column;
+    }
+    .card__cuerpo p{
+        text-align: center;
+        margin: auto 1rem;
+    }
+    /*pertenece a la seccion liquidos*/
 }
 @media(max-width:992px) {
     .imagenes__atos{
