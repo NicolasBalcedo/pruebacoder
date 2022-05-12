@@ -1,0 +1,94 @@
+.contenedor__cards_index{
+    display: flex;
+    justify-content: space-around;
+    .card{
+        background-color: #FFB677;
+        border-radius: 1.5rem;
+        margin-top: 2rem;
+        -webkit-box-shadow: -8px 14px 37px 0px rgba(0,0,0,0.52);
+        -moz-box-shadow: -8px 14px 37px 0px rgba(0,0,0,0.52);
+        box-shadow: -8px 14px 37px 0px rgba(0,0,0,0.52);
+        .card_titulo{
+            text-align: center;
+        }
+        .card-img-top{
+            border: solid white;
+            border-radius: 1rem;
+            width: 20rem;
+            height: 25rem;
+            align-self: center;
+            margin :1rem;
+        }
+        .card_text{
+            background-color: beige;
+            height: 40rem;
+            border-radius: 0.5rem;
+            border:double 0.5rem black;
+            text-align: center;
+            align-self: center;
+            padding: 3rem;
+            overflow: auto;
+            margin: auto;
+            margin-bottom: 2rem;
+            
+        }
+
+    }
+}
+.titulo_barras{
+        
+    h2{
+    text-align: center;
+    margin: 2rem;
+    text-decoration: underline;
+    }
+    .contenedor_barras{
+        display: flex;
+        flex-direction: column;
+        font-size: 2rem;
+        text-align: center;
+        margin: 2rem auto;
+        h3{
+            font-size:smaller;
+        }
+        .barra{
+            height: 2rem;
+            margin: 2rem;
+            -webkit-box-shadow: -8px 14px 37px 0px rgba(0,0,0,0.52);
+            -moz-box-shadow: -8px 14px 37px 0px rgba(0,0,0,0.52);
+            box-shadow: -8px 14px 37px 0px rgba(0,0,0,0.52);
+        }
+    }   
+    
+}
+
+
+.contenedor__videos{
+    margin: 2rem auto;
+    h2{
+        text-align: center;
+        margin:2rem auto;
+        font-size:large;
+    }
+    .videos{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    iframe{
+        padding: 0;
+        margin: 0;
+        -webkit-box-shadow: -8px 14px 37px 0px rgba(0,0,0,0.52);
+        -moz-box-shadow: -8px 14px 37px 0px rgba(0,0,0,0.52);
+        box-shadow: -8px 14px 37px 0px rgba(0,0,0,0.52);
+        &:hover{
+            border-radius: 15px;
+            -webkit-box-shadow: -8px 14px 37px 0px rgba(0,0,0,0.52);
+            -moz-box-shadow: -8px 14px 37px 0px rgba(0,0,0,0.52);
+            box-shadow: -8px 14px 37px 0px rgba(0,0,0,0.52);
+            transform: rotateY(360deg);
+            transition:linear 5s; 
+        }
+    }
+
+}

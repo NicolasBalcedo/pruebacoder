@@ -1,0 +1,22 @@
+.contenedor_video_alquimia{
+    display: flex;
+    flex-direction: row;
+    h2{
+        text-align: center;
+        margin: 2rem;
+    }
+    iframe{
+        height: 40rem;
+        border-radius: 3rem;
+        margin: 2rem auto 2rem;
+        padding: 0;
+        -webkit-box-shadow: -8px 14px 37px 0px rgba(0,0,0,0.52);
+        -moz-box-shadow: -8px 14px 37px 0px rgba(0,0,0,0.52);
+        box-shadow: -8px 14px 37px 0px rgba(0,0,0,0.52);
+    }
+    p{
+        text-align: center;
+        margin: 2rem auto;
+        padding: 4rem;
+    }
+}
