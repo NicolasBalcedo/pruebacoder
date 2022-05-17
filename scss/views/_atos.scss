@@ -11,9 +11,7 @@
         img{
             padding: 0;
             border-radius: 1rem;
-            -webkit-box-shadow: -8px 14px 37px 0px rgba(0,0,0,0.52);
-            -moz-box-shadow: -8px 14px 37px 0px rgba(0,0,0,0.52);
-            box-shadow: -8px 14px 37px 0px rgba(0,0,0,0.52);
+            @include sombras;
         }
     }
     .atos__articulos{
@@ -24,9 +22,7 @@
         padding: 4rem;
         overflow-y: auto;
         background-color: rgb(255, 182, 119);
-        -webkit-box-shadow: -8px 14px 37px 0px rgba(0,0,0,0.52);
-        -moz-box-shadow: -8px 14px 37px 0px rgba(0,0,0,0.52);
-        box-shadow: -8px 14px 37px 0px rgba(0,0,0,0.52);
+        @include sombras;
         section{
             display: flex;
             flex-direction: column;
