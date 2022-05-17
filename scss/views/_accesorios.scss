@@ -3,12 +3,9 @@
     flex-wrap: nowrap;
     border-radius: 3rem;
     background-color: rgb(255, 182, 119);
+    @include sombras;
     .card-img-top{
-        border-radius: 1rem;
-        width: 20rem;
-        height: 25rem;
-        align-self: center;
-        margin :1rem;
+        @include imagenCards(none,none,1rem,20rem,25rem,1rem);
+        @include sombras;
     }
-    
 }

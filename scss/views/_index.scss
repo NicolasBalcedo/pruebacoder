@@ -1,23 +1,15 @@
 .contenedor__cards_index{
     display: flex;
-    justify-content: space-around;
     .card{
         background-color: #FFB677;
         border-radius: 1.5rem;
         margin-top: 2rem;
-        -webkit-box-shadow: -8px 14px 37px 0px rgba(0,0,0,0.52);
-        -moz-box-shadow: -8px 14px 37px 0px rgba(0,0,0,0.52);
-        box-shadow: -8px 14px 37px 0px rgba(0,0,0,0.52);
+        @include sombras;
         .card_titulo{
             text-align: center;
         }
         .card-img-top{
-            border: solid white;
-            border-radius: 1rem;
-            width: 20rem;
-            height: 25rem;
-            align-self: center;
-            margin :1rem;
+            @include imagenCards(solid,black,0.5rem,15rem,20rem,1rem);
         }
         .card_text{
             background-color: beige;
@@ -54,9 +46,7 @@
         .barra{
             height: 2rem;
             margin: 2rem;
-            -webkit-box-shadow: -8px 14px 37px 0px rgba(0,0,0,0.52);
-            -moz-box-shadow: -8px 14px 37px 0px rgba(0,0,0,0.52);
-            box-shadow: -8px 14px 37px 0px rgba(0,0,0,0.52);
+            @include sombras;
         }
     }   
     
@@ -78,14 +68,10 @@
     iframe{
         padding: 0;
         margin: 0;
-        -webkit-box-shadow: -8px 14px 37px 0px rgba(0,0,0,0.52);
-        -moz-box-shadow: -8px 14px 37px 0px rgba(0,0,0,0.52);
-        box-shadow: -8px 14px 37px 0px rgba(0,0,0,0.52);
+        @include sombras;
         &:hover{
             border-radius: 15px;
-            -webkit-box-shadow: -8px 14px 37px 0px rgba(0,0,0,0.52);
-            -moz-box-shadow: -8px 14px 37px 0px rgba(0,0,0,0.52);
-            box-shadow: -8px 14px 37px 0px rgba(0,0,0,0.52);
+            @include sombras;
             transform: rotateY(360deg);
             transition:linear 5s; 
         }

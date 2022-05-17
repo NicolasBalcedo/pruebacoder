@@ -1,4 +1,9 @@
 /*Estilos generales para toda la pagina*/
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
 html{
     font-size: 62.5%;  
 }
@@ -7,26 +12,30 @@ main{
 }
 body{
     background: linear-gradient(to bottom,#5F6CAF, #EDF7FA, #5F6CAF);
+    
 }
 footer{
     width: 100vw;
 }
 /*estilos de etiquetas de texto generales para toda la pagina*/
 a{
-    text-decoration: none;
-    color: black;
-    font-size: 1.5rem;
+    @extend .color__links;
     font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;    
+    font-weight: bold;
 }
 h1{
-    font-size: 4rem;
+    @extend .color__titulo;
     font-family: Bangers;
     font-weight: bold;
     text-align: center;
 }
+h2{
+    @extend .color__subtitulo;
+    @extend h1;
+    font-weight: lighter;
+}
 p{
-    font-size: 2rem;
+    @extend .color__parrafo;
     font-weight: bold;
     font-family: IndieFlower;
 }
