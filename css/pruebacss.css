@@ -191,7 +191,8 @@ header {
       flex-direction: row; }
 
 .contenedor__cards_index {
-  display: flex; }
+  display: flex;
+  margin: auto; }
   .contenedor__cards_index .card {
     background-color: #FFB677;
     border-radius: 1.5rem;
@@ -270,11 +271,16 @@ header {
 .contenedor__atos_main {
   display: flex;
   flex-direction: row;
-  justify-content: space-between; }
+  justify-content: center;
+  align-items: center; }
   .contenedor__atos_main .imagenes__atos {
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: auto; }
     .contenedor__atos_main .imagenes__atos img {
+      height: 20rem;
+      margin: 1rem;
       padding: 0;
       border-radius: 1rem;
       -webkit-box-shadow: -8px 14px 37px 0px rgba(0, 0, 0, 0.52);
@@ -286,7 +292,7 @@ header {
     border: solid 2px black;
     border-radius: 10px;
     padding: 4rem;
-    overflow-y: auto;
+    justify-content: space-around;
     background-color: #ffb677;
     -webkit-box-shadow: -8px 14px 37px 0px rgba(0, 0, 0, 0.52);
     -moz-box-shadow: -8px 14px 37px 0px rgba(0, 0, 0, 0.52);
@@ -324,8 +330,12 @@ header {
       flex-direction: row; }
       .contenedor-cards .liquidos_card .card__cuerpo img {
         width: 13rem;
+        height: 13rem;
         border-radius: 3rem;
-        margin: 0.5rem auto; }
+        margin: 0.3rem 1rem 3.5rem 1rem;
+        -webkit-box-shadow: -8px 14px 37px 0px rgba(0, 0, 0, 0.52);
+        -moz-box-shadow: -8px 14px 37px 0px rgba(0, 0, 0, 0.52);
+        box-shadow: -8px 14px 37px 0px rgba(0, 0, 0, 0.52); }
       .contenedor-cards .liquidos_card .card__cuerpo p {
         margin: auto 1rem; }
 
@@ -382,16 +392,21 @@ form {
 
 @media (max-width: 768px) {
   /*pertenece al footer*/
-  .links {
+  .footer .contenedor__pie .links {
     display: none; }
   /*pertenece a la seccion liquidos*/
-  .card__cuerpo {
+  .liquidos_card .card__cuerpo {
     flex-direction: column; }
-  .card__cuerpo p {
-    text-align: center;
-    margin: auto 1rem; }
+    .liquidos_card .card__cuerpo img {
+      align-self: center; }
+    .liquidos_card .card__cuerpo p {
+      padding: 1rem; }
   /*pertenece a la seccion liquidos*/ }
 
 @media (max-width: 992px) {
-  .imagenes__atos {
-    display: none; } }
+  .contenedor__atos_main .imagenes__atos {
+    display: none; }
+  .card__cuerpo img {
+    align-self: center; }
+  .card__cuerpo p {
+    padding: 1rem; } }

@@ -20,14 +20,14 @@
         <link rel="stylesheet" href="css/pruebacss.css">
     </head>
     <!--Comienzo de Cuerpo de seccion Liquidos-->
-    <body class="container-fluid">
-        <div class="row">
+    <body>
+        <div class="container-fluid">
             <!--Encabezado de Cuerpo de seccion Liquidos-->
             <header class="row">
                 <!--logo de la pagina que redirecciona a la pagina de inicio-->
                 <a href="index.html"><img class="imagenLogo rubberBand" src="imagenes/logo.jpg" alt="Logo de Pagina" title="Logo de pagina"></a>
                 <!--Menu de navegacion con las diferentes secciones de la pagina-->
-                <nav class="col-md-12 col-lg-12 col-xl-12 col-xxl-12 navbar navbar-expand-lg navbar-light  navbar-nav sin_fondo_nav"> 
+                <nav class="row col-md-12 col-lg-12 col-xl-12 col-xxl-12 navbar navbar-expand-lg navbar-light  navbar-nav sin_fondo_nav"> 
                     <div>
                         <!--Boton Toggler de menu desplegable-->
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -46,59 +46,72 @@
                 </nav>
             </header>
             <!--Empieza el cuerpo de la pagina -->
-            <main class="row">
+            <main class="container-fluid">
                 <h1 class="index--titulo">Diferentes tipos de Mods</h1>
-                <div class="row contenedor__cards_index">
-                    <div class="card col-md-12 col-lg-6 col-xl-6 col-xxl-6">
+                <div class="row col-md-7 col-lg-7 col-xl-7 col-xxl-6 contenedor__cards_index">
+                    <div class="card">
                         <h2 class="card_titulo">Mods Variables</h2>
                         <img src="imagenes/mods variable.jpg"  class="card-img-top mx-auto" alt="Mod variable" title="Mod variable">
                         <p class="card_text">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore, dolorem itaque placeat voluptatem 
-                        assumenda cupiditate nobis eaque culpa ipsam sequi cumque excepturi ex nesciunt illum eius suscipit 
-                        provident ullam officia!Facilis repudiandae, nesciunt quis eaque perferendis dolorem totam delectus 
-                        voluptatem hic cupiditate beatae reprehenderit? Ab sequi unde qui animi at perspiciatis reiciendis 
-                        iste adipisci, nobis cupiditate? Laborum ipsam fuga laboriosam.
+                            El vape pen de voltios variables te da derecho a configurar el voltaje con el que quieres que funcionen tus baterías. A pesar de la cantidad de energía restante, sigue proporcionando un suministro constante de energía y regulación de la temperatura. Esto te da mucho control sobre el sabor y la experiencia.
+                            Para entender el voltaje del bolígrafo para vapear es esencial tener en cuenta que el ajuste de un voltaje más alto da mayores cantidades de calor, aumentando o reduciendo varios aspectos de su vapeo.
+                            Los ajustes de bajo voltaje dan sabores más sutiles para moverse, ya que algunos niveles de golpe no pueden ser alcanzados por el calor más alto. Los voltajes más bajos también dan una satisfacción más suave y lisa ya que necesitas golpear tras golpe en ajustes de calor bajos para obtener los niveles de THC deseados. Por otro lado, los voltajes más altos dan un sabor más enriquecido y pesado que los efectos instantáneos.
+                            Tu experiencia de vapeo cuando usas un vapeador de voltaje variable depende en gran medida de tus preferencias de vapeo. Para empezar, se recomiendan algunos rangos de voltios. Una vez que te sientas cómodo con el funcionamiento de los dispositivos y sus niveles de satisfacción, será fácil ajustarlos en consecuencia.
+                            Es importante recordar que varios cannabinoides y terpenos se activan a diferentes temperaturas. Esto significa que obtendrás sabores y efectos óptimos de varias cepas a temperaturas óptimas.
                         </p>   
                     </div>
-                    <div class="card col-md-12 col-lg-6 col-xl-6 col-xxl-6">
+                    <div class="card">
                         <h2 class="card_titulo">Mods Mecanicos</h2>
                         <img src="imagenes/mods 2.jpg" class="card-img-top" alt="Mod mecanico" title="Mod mecanico">
                         <p class="card_text">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil eius numquam commodi doloremque fugiat ullam harum 
-                            accusamus, vero totam, corporis pariatur exercitationem at qui praesentium! Error obcaecati harum voluptas perferendis.
-                            Nam aliquid praesentium dolore distinctio in doloremque veniam ab laborum dolores repellat dolor architecto, molestiae 
-                            deserunt explicabo quod eius sapiente aut blanditiis adipisci assumenda molestias. Et voluptatibus veniam ad vero.
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore, dolorem itaque placeat voluptatem 
-                            assumenda cupiditate nobis eaque culpa ipsam sequi cumque excepturi ex nesciunt illum eius suscipit 
-                            provident ullam officia!Facilis repudiandae, nesciunt quis eaque perferendis dolorem totam delectus 
-                            voluptatem hic cupiditate beatae reprehenderit? Ab sequi unde qui animi at perspiciatis reiciendis 
-                            iste adipisci, nobis cupiditate? Laborum ipsam fuga laboriosam.
+                            Los mods mecánicos no son tan sofisticados como puedan parecer. Básicamente, es un dispositivo que proporciona la potencia directa 
+                            de la batería a un atomizador. Aunque estos mods parecen ser aparatos complejos que solo puede entender alguien que ha estudiado 
+                            ingeniería electrónica, resulta que los mods mecánicos en realidad son los más simples de todos los mods.
                         </p>
                     </div> 
                 </div>
             </main>
             <div class="container-fluid titulo_barras">
-                <h2>Beneficios de Vapear</h2>
+                <h2>Datos sobre Vapeadores</h2>
+                <div class="row col-6 col-sm-8 col-md-10 col-lg-8 col-xl-6 col-xxl-6 contenedor_barras">
+                    <h3>Buen aroma de vapeo</h3>
+                    <div class="row progress barra">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" alt="100%" title="100%" style="width: 100%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <h3>Contaminacion ambiental</h3>
+                    <div class="row progress barra">
+                        <div class="progress-bar progress-bar-striped bg-success progress-bar-animated" role="progressbar" alt="3%" title="3%" style="width: 3%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <h3>Vapear vs Cigarrillo(Impacto economico)</h3>
+                    <div class="row progress barra">
+                        <div class="progress-bar progress-bar-striped bg-info progress-bar-animated" role="progressbar" alt="40%" title="40%" style="width: 40%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <h3>Contaminacion pulmonar</h3>
+                    <div class="row progress barra">
+                        <div class="progress-bar progress-bar-striped bg-warning progress-bar-animated" role="progressbar" alt="3%" title="3%" style="width: 3%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <h3>Personas que afirman haber dejado de fumar por vapear </h3>
+                    <div class="row progress barra">
+                        <div class="progress-bar progress-bar-striped bg-danger progress-bar-animated" role="progressbar" alt="80%" title="80%" style="width: 80%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </div>
+                <h2>Datos sobre fumadores</h2>
                 <div class="row col-6 col-sm-8 col-md-10 col-lg-8 col-xl-6 col-xxl-6 contenedor_barras">
                     <h3>Contaminacion pulmonar</h3>
                     <div class="row progress barra">
-                        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" alt="2%" title="2%" style="width: 2%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" alt="100%" title="100%" style="width: 100%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
-                    <h3>Contaminacion pulmonar</h3>
+                    <h3>Contaminacion ambiental</h3>
                     <div class="row progress barra">
-                        <div class="progress-bar progress-bar-striped bg-success progress-bar-animated" role="progressbar" alt="25%" title="25%" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        <div class="progress-bar progress-bar-striped bg-success progress-bar-animated" role="progressbar" alt="80%" title="80%" style="width: 80%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
-                    <h3>Contaminacion pulmonar</h3>
+                    <h3>Riesgo de convertir en fumadores pasivos a cercanos</h3>
                     <div class="row progress barra">
-                        <div class="progress-bar progress-bar-striped bg-info progress-bar-animated" role="progressbar" alt="50%" title="50%" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                        <div class="progress-bar progress-bar-striped bg-warning progress-bar-animated" role="progressbar" alt="40%" title="40%" style="width: 40%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
-                    <h3>Contaminacion pulmonar</h3>
+                    <h3>Personas que afirman haber dejado de fumar por voluntad propia </h3>
                     <div class="row progress barra">
-                        <div class="progress-bar progress-bar-striped bg-warning progress-bar-animated" role="progressbar" alt="75%" title="75%" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                    <h3>Contaminacion pulmonar</h3>
-                    <div class="row progress barra">
-                        <div class="progress-bar progress-bar-striped bg-danger progress-bar-animated" role="progressbar" alt="100%" title="100%" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                        <div class="progress-bar progress-bar-striped bg-danger progress-bar-animated" role="progressbar" alt="30%" title="30%" style="width: 30%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
                 </div>
             </div>

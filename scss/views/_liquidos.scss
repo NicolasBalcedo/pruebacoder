@@ -22,8 +22,10 @@
             flex-direction: row;
             img{
                 width: 13rem;
+                height: 13rem;
                 border-radius: 3rem;
-                margin: 0.5rem auto;
+                margin: 0.3rem 1rem 3.5rem 1rem;
+                @include sombras;
             }
             p{
                 margin: auto 1rem;

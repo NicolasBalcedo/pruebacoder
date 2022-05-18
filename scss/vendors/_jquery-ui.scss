@@ -1,21 +1,38 @@
 @media(max-width:768px) {
     /*pertenece al footer*/
-    .links{
-        display: none;
+    .footer{
+        .contenedor__pie{
+            .links{
+                display: none;
+            }
+        } 
     }
-
     /*pertenece a la seccion liquidos*/
-    .card__cuerpo{
-        flex-direction: column;
-    }
-    .card__cuerpo p{
-        text-align: center;
-        margin: auto 1rem;
+    .liquidos_card{
+        .card__cuerpo{
+            flex-direction: column;
+            img{
+                align-self: center;
+            }
+            p{
+                padding: 1rem;
+            }
+        }
     }
     /*pertenece a la seccion liquidos*/
 }
 @media(max-width:992px) {
-    .imagenes__atos{
-        display: none;
+    .contenedor__atos_main{
+        .imagenes__atos{
+            display: none;
+        }
+    }
+    .card__cuerpo{
+        img{
+            align-self: center;
+        }
+        p{
+            padding: 1rem;
+        }
     }
 }
