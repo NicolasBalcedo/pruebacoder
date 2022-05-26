@@ -1,4 +1,4 @@
-$colores:("titulo":black,"subtitulo":rgb(124, 121, 121),"parrafo":rgb(32, 32, 110),"links":rgb(136, 177, 4));
+$colores:("titulo":black,"subtitulo":rgb(93, 99, 102),"parrafo":rgb(32, 32, 110),"links":rgb(96, 124, 3));
 //estilos de a , h1, h2, p//
 @each $nombre,$color in $colores {
     .color__#{$nombre}{
@@ -10,7 +10,7 @@ $colores:("titulo":black,"subtitulo":rgb(124, 121, 121),"parrafo":rgb(32, 32, 11
         @if $nombre == "subtitulo" {
             color: $color;
             text-decoration: underline;
-            font-size: 3rem;
+            font-size: 2.5rem;
         }
         @if $nombre == "parrafo" {
             color: $color;

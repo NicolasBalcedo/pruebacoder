@@ -1,11 +1,26 @@
-.accesorios_card{
-    margin: 0.3rem auto 0.7rem;
-    flex-wrap: nowrap;
-    border-radius: 3rem;
-    background-color: rgb(255, 182, 119);
-    @include sombras;
-    .card-img-top{
-        @include imagenCards(none,none,1rem,20rem,25rem,1rem);
+.accesorios__titulo{
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+.contenedor__complementos{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    .accesorios_card{
+        margin: 0.3rem auto 0.7rem;
+        flex-wrap: nowrap;
+        border-radius: 3rem;
+        background-color: rgb(255, 182, 119);
         @include sombras;
+        .card-img-top{
+            @include imagenCards(none,none,1rem,20rem,25rem,1rem);
+            @include sombras;
+        }
+        .card-body{
+            .card-text{
+                text-align: center;
+                font-weight: lighter;
+            }
+        }
     }
 }

@@ -1,3 +1,15 @@
 .sin_fondo_nav{
     background: linear-gradient(to bottom,black, #EDF7FA, #5f6caf);
 }
+
+.navbar-nav{
+    .iconNav{
+        margin: auto;
+        width: 2rem;
+        height: 2rem;
+    }
+    a{
+        text-transform: uppercase;
+
+    }
+}

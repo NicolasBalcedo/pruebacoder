@@ -1,9 +1,10 @@
 .contenedor_video_alquimia{
     display: flex;
     flex-direction: row;
-    h2{
+    h1{
         text-align: center;
-        margin: 2rem;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
     }
     iframe{
         height: 40rem;

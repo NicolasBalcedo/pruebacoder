@@ -1,19 +1,21 @@
 .atos__title{
     text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
 }
 .contenedor__atos_main{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
-    .imagenes__atos{
+    margin-bottom: 3rem;
+    .imagenes__atos__left{
         display: flex;
         flex-direction: column;
-        justify-content: space-evenly;
-        margin: auto;
+        justify-content: space-around;
         img{
+            width: 20rem;
             height: 20rem;
-            margin: 1rem;
+            margin: auto;
             padding: 0;
             border-radius: 1rem;
             @include sombras;
@@ -22,23 +24,34 @@
     .atos__articulos{
         display: flex;
         flex-direction: column;
-        border: solid 2px black;
+        
         border-radius: 10px;
         padding: 4rem;
-        
-        justify-content: space-around;
-        
         background-color: rgb(255, 182, 119);
         @include sombras;
         section{
             display: flex;
             flex-direction: column;
-            justify-content: center;
-            align-items: center;
             h2{
                 font-size: 2rem;
                 padding-bottom: 1.5rem;
             }
+            p{
+                text-align: center;
+            }
+        }
+    }
+    .imagenes__atos__right{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        img{
+            width: 20rem;
+            height: 20rem;
+            margin: auto;
+            padding: 0;
+            border-radius: 1rem;
+            @include sombras;
         }
     }
 }

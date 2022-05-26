@@ -20,22 +20,20 @@ footer{
 /*estilos de etiquetas de texto generales para toda la pagina*/
 a{
     @extend .color__links;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
+    @extend h1;
 }
 h1{
     @extend .color__titulo;
-    font-family: Bangers;
+    font-family: Inter;
     font-weight: bold;
     text-align: center;
 }
 h2{
     @extend .color__subtitulo;
     @extend h1;
-    font-weight: lighter;
+    font-style: oblique;
 }
 p{
     @extend .color__parrafo;
-    font-weight: bold;
-    font-family: IndieFlower;
+    font-family: Bangers;
 }

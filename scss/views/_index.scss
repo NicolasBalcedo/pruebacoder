@@ -1,5 +1,6 @@
 .contenedor__cards_index{
     display: flex;
+    flex-direction: row;
     margin: auto;
     .card{
         background-color: #FFB677;
@@ -10,7 +11,8 @@
             text-align: center;
         }
         .card-img-top{
-            @include imagenCards(solid,black,0.5rem,15rem,20rem,1rem);
+            @include imagenCards(solid,none,0.5rem,15rem,20rem,1rem);
+            @include sombras;
         }
         .card_text{
             background-color: beige;
@@ -65,17 +67,16 @@
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
-    }
-    iframe{
-        padding: 0;
-        margin: 0;
-        @include sombras;
-        &:hover{
-            border-radius: 15px;
+        iframe{
+            padding: 0;
+            margin: 0;
             @include sombras;
-            transform: rotateY(360deg);
-            transition:linear 5s; 
+            &:hover{
+                border-radius: 15px;
+                @include sombras;
+                transform: rotateY(360deg);
+                transition:linear 5s; 
+            }
         }
     }
-
 }

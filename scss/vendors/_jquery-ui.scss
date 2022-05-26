@@ -1,10 +1,37 @@
+@media(max-width:576px){
+    .contenedor__videos{
+        margin: 2rem auto;
+    }
+    .footer{
+        .contenedor__pie{
+            flex-direction: column;
+            .links{
+                ul{
+                    flex-direction: column;
+                    text-align: center;
+                }
+            }
+        } 
+    }
+    .contenedor__atos_main{
+        flex-direction: column;
+        
+        .imagenes__atos__left{
+            display: none;
+        }
+        .imagenes__atos__right{
+            display: none;
+        }
+    }
+}
 @media(max-width:768px) {
+    .contenedor__videos{
+        margin: 2rem auto;
+    }
     /*pertenece al footer*/
     .footer{
         .contenedor__pie{
-            .links{
-                display: none;
-            }
+            flex-direction: column;
         } 
     }
     /*pertenece a la seccion liquidos*/
@@ -20,19 +47,47 @@
         }
     }
     /*pertenece a la seccion liquidos*/
-}
-@media(max-width:992px) {
-    .contenedor__atos_main{
-        .imagenes__atos{
-            display: none;
+    .contenedor-cards{
+        
+        .liquidos_card{
+            
+            .card__cuerpo{
+                flex-direction: column;
+                img{
+                    width: 20rem;
+                    height: 20rem;
+                    margin: 1.5rem;
+                }
+            }
         }
     }
+}
+@media(max-width:992px) {
     .card__cuerpo{
         img{
             align-self: center;
         }
         p{
             padding: 1rem;
+        }
+    }
+}
+@media(max-width:1200px){
+    .contenedor__atos_main{
+        flex-direction: column;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        
+        .imagenes__atos__left{
+            flex-direction: row;
+        }
+        .atos__articulos{
+            margin: auto;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+        }
+        .imagenes__atos__right{
+            flex-direction: row;
         }
     }
 }
