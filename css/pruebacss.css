@@ -89,7 +89,7 @@
 
 .color__titulo, h1, a, h2 {
   color: black;
-  text-decoration: underline;
+  text-decoration: none;
   font-size: 4rem; }
 
 .color__subtitulo, h2 {
@@ -104,7 +104,7 @@
 
 .color__links, a {
   color: #607c03;
-  text-decoration: underline;
+  text-decoration: none;
   font-size: 1.5rem; }
 
 /*Estilos generales para toda la pagina*/
@@ -181,7 +181,8 @@ header {
     align-items: center; }
     .footer .contenedor__pie img {
       width: 5rem;
-      height: 5rem; }
+      height: 5rem;
+      border-radius: 0.8rem; }
     .footer .contenedor__pie .imagen_creador {
       display: flex;
       flex-direction: row;
@@ -192,10 +193,16 @@ header {
         display: flex;
         flex-direction: row; }
         .footer .contenedor__pie .links ul li {
-          margin: 15px; }
+          margin: 1rem 2rem;
+          list-style: none; }
     .footer .contenedor__pie .contenedor__redes2 {
       display: flex;
       flex-direction: row; }
+
+.index--titulo {
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 3rem; }
 
 .contenedor__cards_index {
   display: flex;
@@ -421,7 +428,6 @@ form {
   font-size: 2rem;
   text-align: center;
   align-items: center;
-  border: solid 0.1rem #7a7979;
   margin: 2rem auto; }
 
 @media (max-width: 576px) {

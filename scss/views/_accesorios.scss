@@ -1,7 +1,5 @@
 .accesorios__titulo{
-    text-align: center;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
+    @include titulosPrincipales(center,3rem,3rem);
 }
 .contenedor__complementos{
     margin-top: 3rem;

@@ -1,3 +1,6 @@
+.index--titulo{
+    @include titulosPrincipales(center,3rem,3rem);
+}
 .contenedor__cards_index{
     display: flex;
     flex-direction: row;
@@ -25,9 +28,7 @@
             overflow: auto;
             margin: auto;
             margin-bottom: 2rem;
-            
         }
-
     }
 }
 .titulo_barras{
@@ -51,11 +52,8 @@
             margin: 2rem;
             @include sombras;
         }
-    }   
-    
+    }
 }
-
-
 .contenedor__videos{
     margin: 2rem auto;
     h2{

@@ -1,25 +1,31 @@
+@mixin titulosPrincipales($align, $marginUp,$marginDown){
+    text-align: $align;
+    margin-top: $marginUp;
+    margin-bottom: $marginDown;
+}
+
 $colores:("titulo":black,"subtitulo":rgb(93, 99, 102),"parrafo":rgb(32, 32, 110),"links":rgb(96, 124, 3));
 //estilos de a , h1, h2, p//
 @each $nombre,$color in $colores {
     .color__#{$nombre}{
-        @if $nombre == "titulo" {
+        @if $nombre == "titulo"{
             color: $color;
-            text-decoration: underline;
+            text-decoration: none;
             font-size: 4rem;
         }
-        @if $nombre == "subtitulo" {
+        @if $nombre == "subtitulo"{
             color: $color;
             text-decoration: underline;
             font-size: 2.5rem;
         }
-        @if $nombre == "parrafo" {
+        @if $nombre == "parrafo"{
             color: $color;
             text-decoration: none;
             font-size: 2rem;
         }
-        @if $nombre == "links" {
+        @if $nombre == "links"{
             color: $color;
-            text-decoration: underline;
+            text-decoration: none;
             font-size: 1.5rem;
         }
     }

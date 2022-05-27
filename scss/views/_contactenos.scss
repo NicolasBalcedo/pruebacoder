@@ -1,7 +1,5 @@
 .titulo__formulario{
-    text-align: center;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
+    @include titulosPrincipales(center,3rem,3rem);
 }
 form{
     display: flex;
@@ -9,6 +7,5 @@ form{
     font-size: 2rem;
     text-align: center;
     align-items: center;
-    border: solid 0.1rem rgb(122, 121, 121);
     margin: 2rem auto;
 }
